@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Newstyle - Encuentro Nacional 2026</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-danger" href="#">NEWSTYLE 🔥</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#djs">DJs Legendarios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#masia">La Masía</a></li>
+                <li class="nav-item"><a class="nav-link" href="#datos">Datos Clave</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-danger text-white px-3 ms-3" href="#evento">¡Entradas!</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero" class="hero d-flex align-items-center text-center text-white" style="background-image: url('https://i.pinimg.com/originals/5b/93/5f/5b935fa8e495fea2f32d705aa722b4d0.jpg'); height: 100vh; background-size: cover; background-position: center;">
+    <div class="container">
+        <h1 class="display-3 fw-bold mb-3 text-danger">NEWSTYLE</h1>
+        <p class="lead fs-3 mb-4 text-danger"><b>El movimiento que nació en La Masía y conquistó España<b></p>
+        <a href="#evento" class="btn btn-danger btn-lg px-5 py-3">¡Quiero ir al Encuentro 2026!</a>
+    </div>
+</header>
+
+<!-- HISTORIA - Grid 2 columnas -->
+<section id="historia" class="py-5 bg-dark text-white">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">¿Cómo empezó todo?</h2>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <p class="lead">El Newstyle nace a finales de los 90 en la Comunidad Valenciana, derivado del <strong>Hard House americano</strong>. La discoteca <strong>La Masía</strong> (Segorbe, Castellón) se convirtió en su cuna en 1991 cuando Xima Segarra introdujo el hardcore y el newstyle. Desde entonces es el templo indiscutible del género en España.</p>
+                <p>Es un estilo caótico, con kicks potentes, leads panic y un groove muy español. ¡La gente viene de toda España solo por una noche en Masía!</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://estaticos-cdn.prensaiberica.es/clip/33063b85-cab9-477f-84bc-569ef5d4d7a4_alta-libre-aspect-ratio_default_0.jpg" class="img-fluid rounded shadow" alt="Orígenes Newstyle">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DJS - Grid de Cards (3 columnas) -->
+<section id="djs" class="py-5">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">DJs que marcaron historia</h2>
+        <div class="row g-4">
+            <!-- Wakan DJ -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-dark text-white border-danger">
+                    <img src="https://www.gothamvlc.com/wp-content/uploads/2018/10/WAKAN-DJ2.jpg" class="card-img-top" alt="Wakan DJ">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Wakan DJ</h5>
+                        <p class="card-text">Residente histórico y actual dueño de Masía. Empezó a los 15 años y debutó en Masía a los 16. Dueño de Masia Records.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DJ More -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-dark text-white border-danger">
+                    <img src="https://i.scdn.co/image/ab67616d00001e025e376945f2077e13052e4cd2" class="card-img-top" alt="DJ More">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">DJ More</h5>
+                        <p class="card-text">Productor y DJ de Newscore. Cada año pone la banda sonora del aniversario de Masía. ¡Temazos legendarios!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Hermanos Kapiya -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-dark text-white border-danger">
+                    <img src="https://i1.sndcdn.com/avatars-maXyRZL3MrpGy8qA-QYZDXQ-t1080x1080.jpg" class="card-img-top" alt="Hermanos Kapiya">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Hermanos Kapiya</h5>
+                        <p class="card-text">Clásicos del género. Sus tracks “Ay Como Voy!! y “Masia Way" suenan en todas las sesiones Newstyle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MASÍA - Grid 2 columnas + Carousel -->
+<section id="masia" class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">La Masía -El Templo del Newstyle</h2>
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div id="carouselMasia" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://estaticos-cdn.prensaiberica.es/clip/7936afdc-1f0c-4b97-ab24-230d0e5d6dfd_alta-libre-aspect-ratio_default_0.jpg" class="d-block w-100 rounded" alt="Masia exterior">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="D:\Angel\Aplicaciones web\BOOTSTRAP\Captura de pantalla 2026-02-26 084005.png" class="d-block w-100 rounded" alt="Pista Masia">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMasia" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMasia" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="text-danger">Ubicación</h4>
+                <p>Segorbe (Castellón) �?Desde 1991. Abierta todos los sábados. Entrada +16 años.</p>
+                <ul class="list-group list-group-flush bg-dark">
+                    <li class="list-group-item bg-dark text-white border-danger">Apertura: 22:00 h</li>
+                    <li class="list-group-item bg-dark text-white border-danger">2-3 pistas de Newstyle / Hardcore</li>
+                    <li class="list-group-item bg-dark text-white border-danger">Zona comidas y relax</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DATOS IMPORTANTES - Grid -->
+<section id="datos" class="py-5">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">Datos importantes del movimiento</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-3">
+                <div class="p-4 border border-danger rounded">
+                    <h3 class="text-danger">150-160 BPM</h3>
+                    <p>Velocidad típica del Newstyle español</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4 border border-danger rounded">
+                    <h3 class="text-danger">1991</h3>
+                    <p>Año en que nace La Masía</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4 border border-danger rounded">
+                    <h3 class="text-danger">+30 años</h3>
+                    <p>De historia ininterrumpida</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4 border border-danger rounded">
+                    <h3 class="text-danger">Masia Records</h3>
+                    <p>Label oficial del movimiento</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EVENTO (llamada a acción) -->
+<section id="evento" class="py-5 bg-danger text-white text-center">
+    <div class="container">
+        <h2 class="display-5 fw-bold">¡Encuentro Nacional Newstyle 2026!</h2>
+        <p class="lead">Sábado 28 de febrero de 2026 -La Masía (Segorbe)</p>
+        <p class="fs-4">Remember + sets en vivo de Wakan DJ, DJ More y muchos más</p>
+        <a href="#" class="btn btn-dark btn-lg px-5">Comprar entrada anticipada (próximamente)</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black py-5 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>© 2026 Asociación Hard España -Practica DW</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="https://www.instagram.com/masia_discoteca/?hl=es" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@DiscotecaMasiaOficial/featured" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                <a href="https://soundcloud.com/masia-records" class="text-white"><i class="fab fa-soundcloud"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
